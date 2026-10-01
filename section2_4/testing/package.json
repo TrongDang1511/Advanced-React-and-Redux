@@ -11,9 +11,11 @@
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
     "react-redux": "^7.2.6",
+    "react-router-dom": "^5.3.4",
     "react-scripts": "5.0.1",
     "redux": "^4.1.2",
-    "redux-promise": "^0.6.0"
+    "redux-promise": "^0.6.0",
+    "tv4": "^1.3.0"
   },
   "overrides": {
     "cheerio": "1.0.0-rc.3"
@@ -23,5 +25,17 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }

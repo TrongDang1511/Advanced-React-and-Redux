@@ -1,6 +1,7 @@
 import React from 'react';
 import { mount } from 'enzyme';
 import moxios from 'moxios';
+import { MemoryRouter } from 'react-router-dom';
 import Root from 'Root';
 import App from 'components/App';
 
@@ -19,7 +20,9 @@ afterEach(() => {
 it('can fetch a list of comments and display them', done => {
   const wrapped = mount(
     <Root>
-      <App />
+      <MemoryRouter>
+        <App />
+      </MemoryRouter>
     </Root>
   );
 
