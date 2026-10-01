@@ -3,13 +3,20 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "axios": "^1.20.0",
+    "cheerio": "1.0.0-rc.3",
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.6",
+    "moxios": "^0.4.0",
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
     "react-redux": "^7.2.6",
     "react-scripts": "5.0.1",
-    "redux": "^4.1.2"
+    "redux": "^4.1.2",
+    "redux-promise": "^0.6.0"
+  },
+  "overrides": {
+    "cheerio": "1.0.0-rc.3"
   },
   "scripts": {
     "start": "react-scripts start",
