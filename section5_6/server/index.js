@@ -2,16 +2,18 @@ const express = require('express');
 const http = require('http');
 const bodyParser = require('body-parser');
 const morgan = require('morgan');
+const cors = require('cors');
 const app = express();
 const router = require('./router');
 const mongoose = require('mongoose');
 
-mongoose.connect('mongodb://localhost:auth/auth', {
+mongoose.connect('mongodb://localhost:27017/auth', {
   useNewUrlParser: true,
   useUnifiedTopology: true
 });
 
 app.use(morgan('combined'));
+app.use(cors());
 app.use(bodyParser.json({ type: '*/*' }));
 router(app);
 
